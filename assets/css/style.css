@@ -1,12 +1,21 @@
 /* Wildcard  asterisk selector added to override default styles added by the browser*/
 
 * {
-    padding: 0%;
-    margin: 0%;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 
 }
 
+
+/*General styles*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*Generic project styles*/
+    color: #3a3a3a
+}
 
 /* header */
 header {
@@ -16,11 +25,11 @@ header {
 /* main content */
 main {
     background-color: lightblue;
+    /*make main content take up surplus space and push footer down*/
+    flex: 1 0 auto
 }
 
 /* footer */
 footer {
     background-color: orange;
 }
-
-
