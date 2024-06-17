@@ -166,4 +166,19 @@ main {
     height: 600px;
     width: 100%;
     background: url(../images/hero-image.webp) no-repeat center center;
+
+    /*animates hero-image on loading*/
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+/*creating animation of hero-image*/
+@keyframes hero-zoom {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
+    
 }
